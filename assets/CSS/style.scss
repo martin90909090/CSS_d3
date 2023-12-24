@@ -30,8 +30,15 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+    }
     label{
       margin-right: 10px;
     }
