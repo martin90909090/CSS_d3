@@ -17,7 +17,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 10px;
-  @media (max-width: 480px) {
+  @media (max-width: 576px) {
     grid-template-areas: 
       "navbar navbar navbar"
       "products products products"
@@ -30,10 +30,16 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     label{
       margin-right: 10px;
+    }
+    i{
+      margin: 10px;
+      @media (min-width: 576px) {
+        display: none;
+      }
     }
   }
 
@@ -47,7 +53,7 @@ body {
     height: 100%;
     font-weight: 600;
     background-color: peachpuff;
-    @media (max-width: 479px) {
+    @media (max-width: 576px) {
       display: none;
       position: fixed;
       top: 50px;
@@ -90,7 +96,7 @@ body {
         overflow: hidden;
         padding: 5px;
         margin-bottom: 10px;
-        @media (max-width: 480px) { 
+        @media (max-width: 576px) { 
           width: 45%;
         }
         img{

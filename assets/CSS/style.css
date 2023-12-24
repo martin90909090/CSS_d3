@@ -15,7 +15,7 @@ body {
   grid-template-rows: repeat(3, auto);
   grid-gap: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .container-grid {
     grid-template-areas: "navbar navbar navbar" "products products products" "footer footer footer";
   }
@@ -27,11 +27,19 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .container-grid .navbar label {
   margin-right: 10px;
+}
+.container-grid .navbar i {
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .container-grid .navbar i {
+    display: none;
+  }
 }
 .container-grid .menu {
   grid-area: menu;
@@ -44,7 +52,7 @@ body {
   font-weight: 600;
   background-color: peachpuff;
 }
-@media (max-width: 479px) {
+@media (max-width: 576px) {
   .container-grid .menu {
     display: none;
     position: fixed;
@@ -92,7 +100,7 @@ body {
   padding: 5px;
   margin-bottom: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .container-grid .products .product-container .product {
     width: 45%;
   }
