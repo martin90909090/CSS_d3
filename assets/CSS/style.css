@@ -24,9 +24,14 @@ body {
   grid-area: navbar;
   height: 50px;
   background-color: peachpuff;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.container-grid .navbar label {
+  margin-right: 10px;
 }
 .container-grid .menu {
   grid-area: menu;
@@ -49,16 +54,19 @@ body {
     height: 100px;
   }
 }
+.container-grid .menu img {
+  height: 300px;
+}
 .container-grid .menu li {
   list-style-type: none;
 }
 .container-grid .products {
   grid-area: products;
-  background-color: peachpuff;
+  background-color: black;
   height: 100%;
 }
 .container-grid .products .product-container {
-  background-color: azure;
+  background-color: black;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -101,13 +109,19 @@ body {
 .container-grid .footer {
   grid-area: footer;
   background-image: url("../img/footer_bg.png");
-  height: 500px;
+  height: 700px;
   font-size: 34px;
   font-weight: 600;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+.container-grid .footer span {
+  margin: 30px;
+}
+.container-grid .footer .logos img {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */
